@@ -1,4 +1,4 @@
-# Bii-Express-Template
+# Bii-Express-Template🚀
 This express server framework was made to be scalable and easily retrofitable. This was done by identifying and segmenting the different abstractions of a server using strong OOP principles. This was initially written in Js but a rewrite in TS could be greatly beneficial. Understanding of how the server is configured is necessary but not hard. This is by no means a full, let alone complex, solution. It is instead a better starting point for creating express server instances.
 
 # Out of box Support
