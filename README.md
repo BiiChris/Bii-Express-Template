@@ -8,7 +8,8 @@ This express server framework was made to be scalable and easily retrofitable. T
 # Routes
 - All routes can be put within the /controller directory. Each controller must have a routes attribute. This attribute is an array containing all the controller routes. A route is broken down like so: { method, path, handler, priv(whether it is a protected route or not)}
 # Auth middleware
-- As stated. Out the box support for Firebase. If this is the auth middleware of choice you can simply getting your serviceAccount.json config file from Firebase and put it into the main project directory. Indicate the route within the .env config
+- If auth middleware is not required, modification of the #RouteTable method inside of /app would be needed. You can either set priv = false, or ideally remove it is an argument completely. If Firebase is your auth middleware of choice simply get your serviceAccount.json config file from Firebase and put it into the main project directory. Indicate the file path inside of .env.
+- If you would like to use different authentication middleware, set up its functionality as a static function within /config/admin and give it to #Routetable (path: /app).
 # Database Instance
 - Out of box the MYSQL2 sql driver is installed. You can put your configurations within the .env file and have it work within the server instance.
 # /models
